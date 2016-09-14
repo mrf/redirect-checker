@@ -44,11 +44,11 @@ if command_exists curl; then
   printf "Checking: http://www.$domain\n"
   curl -I http://www.$domain
 
-  printf "Checking: https://$domain\n"
-  curl -I https://$domain
-
   printf "Checking: https://www.$domain\n"
   curl -I https://www.$domain
+
+  printf "Checking: https://$domain\n"
+  curl -I https://$domain
 
 else
   printf "curl is required for this script to function, install from your package manager first"
