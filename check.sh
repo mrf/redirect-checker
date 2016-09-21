@@ -4,7 +4,7 @@
 # Parse Command Line Arguments
 while [ $# -gt 0 ]; do
 case "$1" in
-  --domain=*)
+  --uri=*)
     domain="${1#*=}"
     ;;
   --help) 
